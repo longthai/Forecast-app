@@ -7,7 +7,7 @@ export const CurrentCity = ({setCityData}, props) => {
     const geolocationAPI = navigator.geolocation;
     
     const [cityData1, setCityData1] = useState('');
-    const apiKey = "kAzWetgS4cFcNeMtKYzuQl4VaPcvJuEj"
+    const apiKey = "DAvbAmleM4pioYrdBjtt1hbbhPQM6kRe"
 
     const getUserCoordinates = () => {
         if (!geolocationAPI) {

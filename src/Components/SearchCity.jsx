@@ -6,7 +6,7 @@ import { CurrentCity } from './CurrentCity';
 export const SearchCity = () => {
     const [citySearch, setCitySearch] = useState('');
     const [cityData, setCityData] = useState('')
-    const apiKey = "kAzWetgS4cFcNeMtKYzuQl4VaPcvJuEj"
+    const apiKey = "DAvbAmleM4pioYrdBjtt1hbbhPQM6kRe"
 
     //City Search function
     const fetchCity = (e) => {
