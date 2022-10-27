@@ -6,7 +6,7 @@ export const CardCity = ({ cityData }) => {
     //console.log(cityData);
     const [data, setData] = useState();
     const [loading, setLoading] = useState(false);
-    const apiKey = 'gZkkY819wTBdnM6NAyJy8VcAkCx5M1ro'
+    const apiKey = 'kAzWetgS4cFcNeMtKYzuQl4VaPcvJuEj'
 
     const fetchCityData = () => {
         setLoading(true);
