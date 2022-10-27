@@ -24,7 +24,7 @@ export const CurrentCity = ({setCityData}, props) => {
     }
 
     const fetchGeo = () => {
-        axios.get(`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${apiKey}&q=${lat}%2C${long}`).then((response) => {
+        axios.get(`https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${apiKey}&q=${lat}%2C${long}`).then((response) => {
             setCityData1(response.data);
             setCityData(cityData1);
         }).catch((err) => console.log(err.message));

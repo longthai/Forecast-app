@@ -11,7 +11,7 @@ export const SearchCity = () => {
     //City Search function
     const fetchCity = (e) => {
         e.preventDefault();
-        axios.get(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${citySearch}`).then((response) => {
+        axios.get(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${citySearch}`).then((response) => {
             if (response.data.length == 0) {
                 setCitySearch('');
                 alert('City not found!');

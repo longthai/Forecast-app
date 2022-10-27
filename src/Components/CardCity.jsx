@@ -10,7 +10,7 @@ export const CardCity = ({ cityData }) => {
 
     const fetchCityData = () => {
         setLoading(true);
-        axios.get(`http://dataservice.accuweather.com/forecasts/v1/daily/1day/${cityData.Key}?apikey=${apiKey}`).then((response) => {
+        axios.get(`https://dataservice.accuweather.com/forecasts/v1/daily/1day/${cityData.Key}?apikey=${apiKey}`).then((response) => {
             setData(response.data.DailyForecasts[0]);
             setLoading(false);
         }).catch((err) => console.log(err.message));
